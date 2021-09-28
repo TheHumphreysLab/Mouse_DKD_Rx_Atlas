@@ -48,3 +48,6 @@ save(bulk.eset, file = 'bulk.dn.Rda')
 
 save(markers.list, file = 'markers.list.Rda')
 
+Est.prop.alport = music_prop(bulk.eset = bulk.eset, sc.eset = SC.eset, clusters = 'celltype',
+                            markers = markers.list,samples = 'orig.ident',verbose = T)
+save(Est.prop.alport, file = 'music_decon_pt_human_DN2.Rda')
