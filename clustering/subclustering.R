@@ -83,3 +83,38 @@ immune.integrated <- FindNeighbors(immune.integrated, dims = 1:10)
 immune.integrated <- FindClusters(immune.integrated, resolution = 0.3)
 save(immune.integrated, file = 'immune.integrated.Rda')
 Sys.time()
+
+###### Glomerulus subclustering analysis ########
+load("glom.Rda")
+glom.list<-SplitObject(glom, split.by = 'orig.ident')
+for (i in names(glom.list)) {
+  glom.list[[i]] <- SCTransform(glom.list[[i]], verbose = F)
+  print(paste(i, 'done!'))
+}
+glom.features <- SelectIntegrationFeatures(object.list = glom.list, nfeatures = 1000)
+
+glom.list <- PrepSCTIntegration(object.list = glom.list, anchor.features = glom.features)
+
+reference_dataset <- which(names(glom.list) == "A3020")
+
+glom.anchors <- FindIntegrationAnchors(object.list = glom.list,
+                                       anchor.features = glom.features, reference = reference_dataset, normalization.method = "SCT")Sys.time()
+rm(glom.list)
+gc()
+
+for (i in 1:length(names(glom.anchors@object.list))){
+  glom.anchors@object.list[[i]][['integrated']]<-NULL
+}
+glom <- IntegrateData(anchorset = glom.anchors, k.weight = 40)
+Sys.time()
+rm(glom.anchors)
+gc()
+glom<-ScaleData(glom)
+glom <- RunPCA(object = glom, npcs = 30)
+glom <- RunUMAP(object = glom, dims = 1:20)
+glom <- FindNeighbors(glom, dims = 1:20)
+glom <- FindClusters(glom, resolution = 0.1)
+save(glom, file = 'glom.Rda')
+Sys.time()
+
+
