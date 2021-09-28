@@ -23,7 +23,7 @@ Differential_gene_analysis/<br>
 pySCENIC_analysis/<br>
 
 #### 5. Scripts for Figure 6<br>
-clustering/
+clustering/<br>
 Bulk_RNAseq_analysis/<br>
 Deconvolution_analysis/<br>
 Cell-Cell_interaction_analysis/<br>
