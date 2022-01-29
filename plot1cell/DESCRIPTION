@@ -31,7 +31,12 @@ Imports:
     data.table,
     Matrix,
     hdf5r,
-    loomR
+    loomR,
+    Signac,
+    GenomeInfoDb,
+    EnsDb.Hsapiens.v86,
+    cowplot,
+    rlang
 Depends:
     Seurat,
     plotly,
@@ -55,7 +60,12 @@ Depends:
     data.table,
     Matrix,
     hdf5r,
-    loomR
+    loomR,
+    Signac,
+    GenomeInfoDb,
+    EnsDb.Hsapiens.v86,
+    cowplot,
+    rlang
 License: GPL-3 
 Encoding: UTF-8
 LazyData: true
