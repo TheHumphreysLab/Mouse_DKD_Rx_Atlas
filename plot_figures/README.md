@@ -16,3 +16,14 @@ library(plot1cell)
 genelist<-c("gene1", "gene2"...."geneN")
 complex_dotplot_multiple(seu_obj = seu, features = genelist, groupby = "disease") ### change the 'disease' to whatever column name in your metadata
 ```
+## 3. figure4.R
+#### Script to reproduce figure4
+
+## 4. figure5.R
+#### Script to reproduce figure5
+
+## 5. figure6.R
+#### Script to reproduce figure6
+
+## 6. figure7.R
+#### Script to reproduce figure7
