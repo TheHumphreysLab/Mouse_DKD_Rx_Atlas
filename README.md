@@ -12,6 +12,7 @@ plot_figures/figure2.R<br>
 #### 2. Scripts for Figure 3<br>
 Differential_gene_analysis/<br>
 MAGMA_analysis/<br>
+plot_figures/figure3.R<br>
 
 #### 3. Scripts for Figure 4<br> 
 Differential_gene_analysis/<br>
