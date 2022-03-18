@@ -24,9 +24,10 @@ complex_dotplot_multiple(seu_obj = seu, features = genelist, groupby = "disease"
 
 ## 5. figure6.R
 #### Script to reproduce figure6. To use plot1cell and generate the upset plot for your own data, please try:
+```
 library(plot1cell)
 plot_upset(deg_table = deg_df)
-
+```
 ## 6. figure7.R
 #### Script to reproduce figure7. If using plot1cell for your own data, please follow the command lines below:
 ```
