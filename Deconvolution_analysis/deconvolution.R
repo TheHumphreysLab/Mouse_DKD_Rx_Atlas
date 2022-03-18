@@ -4,7 +4,7 @@ library(dplyr)
 library(plot1cell)
 #### deconvolution mouse bulk ######
 dn<-SetIdent(janssen_dn, value = 'group')
-dn<-subset(dn, idents=c("Grp3a"))
+dn<-subset(dn, idents=c("Grp3b"))
 dn<-SetIdent(dn, value = 'celltype')
 sc.eset <- BisqueRNA::SeuratToExpressionSet(dn, delimiter="_", position=1, version="v3")
 bulk<-read.csv('all_counts.csv')
