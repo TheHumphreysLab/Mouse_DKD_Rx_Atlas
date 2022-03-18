@@ -18,17 +18,21 @@ plot_figures/figure3.R<br>
 Differential_gene_analysis/<br>
 Cell-Cell_interaction_analysis/<br>
 Pathway_analysis/<br>
+plot_figures/figure4.R<br>
 
 #### 4. Scripts for Figure 5<br>
 Differential_gene_analysis/<br>
 pySCENIC_analysis/<br>
+plot_figures/figure5.R<br>
 
 #### 5. Scripts for Figure 6<br>
 clustering/<br>
 Bulk_RNAseq_analysis/<br>
 Deconvolution_analysis/<br>
 Cell-Cell_interaction_analysis/<br>
+plot_figures/figure6.R<br>
 
 #### 6. Scripts for Figure 7<br>
 Differential_gene_analysis/<br>
 Pathway_analysis/
+plot_figures/figure7.R<br>
