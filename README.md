@@ -34,5 +34,5 @@ plot_figures/figure6.R<br>
 
 #### 6. Scripts for Figure 7<br>
 Differential_gene_analysis/<br>
-Pathway_analysis/
+Pathway_analysis/<br>
 plot_figures/figure7.R<br>
