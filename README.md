@@ -7,7 +7,7 @@ The raw and processed data have been deposited on Gene Expression Omnibus (**GSE
 #### 1. Scripts for Figure 2<br>
 data_processing/<br>
 clustering/<br>
-
+plot_figures/figure2.R<br>
 
 #### 2. Scripts for Figure 3<br>
 Differential_gene_analysis/<br>
