@@ -26,4 +26,10 @@ complex_dotplot_multiple(seu_obj = seu, features = genelist, groupby = "disease"
 #### Script to reproduce figure6
 
 ## 6. figure7.R
-#### Script to reproduce figure7
+#### Script to reproduce figure7. If using plot1cell, please follow the command lines below:
+```
+library(plot1cell)
+modified_dimplot(seu_obj = seu, label.box = F, title = "")
+complex_vlnplot_single(seu = seu, cell.types = "S1", groups = 'disease')
+complex_vlnplot_single(seu = seu, cell.types = "S2", groups = 'disease')
+```
