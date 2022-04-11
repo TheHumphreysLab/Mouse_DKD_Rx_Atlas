@@ -6,7 +6,6 @@ WORKDIR="/home/scratch/dn_bulk"
 REFDIR="/home/users/haojiawu/refdata-cellranger-GRCh38-3.0.0"
 FASTQDIR="/home/scratch/dn_bulk/fastq_dir"
 do_fastqc=false
-paired=false
 n_cores=20
 ## Set command line arguments
 while [[ $# -gt 0 ]]; do
@@ -107,7 +106,7 @@ mkdir -p featureCounts_dir/intron_dir
 
 ########## Step 2: Read QC, trimming, and alignment ##########
 echo "Read QC and trimming..."
-if [ paired = false ]; then
+if [ do_fastqc = true ]; then
 	cd fastq_dir
 	for fq in $(ls); do
 		if [ "$do_fastqc" = false ]; then
